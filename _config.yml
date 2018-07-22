@@ -1,2 +1,6 @@
-theme: minima
+markdown: kramdown
 repository: ovidiuvio/www.vsdebug.pro
+exclude:
+- ".gitignore"
+- CNAME
+- readme.md
