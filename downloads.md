@@ -7,9 +7,11 @@ overview: true
 
 **Stable Build:**
 {: align="center"}
-[3.1.0.0](http://bit.ly/2JLetdW)
+[3.1.0.1](http://bit.ly/2A5HuSf)
 {: align="center"}
 **Previous Builds:**
+{: align="center"}
+[3.1.0.0](http://bit.ly/2JLetdW)
 {: align="center"}
 [3.0.0.0](http://bit.ly/2JMg9nB)
 {: align="center"}
