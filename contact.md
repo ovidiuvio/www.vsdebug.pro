@@ -5,8 +5,13 @@ overview: true
 
 ---
 Email: <contact@vsdebug.pro>
+
+Issues: [GitHub](https://github.com/ovidiuvio/VSDebugPro/issues)
+
+Requests: [GitHub](https://github.com/ovidiuvio/VSDebugPro/issues)
+
 <hr>
-<div class="jumbotron">
+<div class="container">
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfyAx4HDMDMnFPoEkHZX4pXA4ZzzpBa4RuFbdZAQupjtzUvjg/formResponse?" method="POST">
 <div class="container">
     <p class="text-monospace">Contact:</p>
