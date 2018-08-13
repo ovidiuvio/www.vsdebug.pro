@@ -13,7 +13,7 @@ without writing a debugging function into the program and without recompiling it
 For this purpose we will use the following simple c code:
 
 
-```
+```cpp
 int main()
 {
     // buffer size
