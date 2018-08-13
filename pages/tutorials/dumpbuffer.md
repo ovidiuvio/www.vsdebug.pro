@@ -38,7 +38,7 @@ that we add some new debugging code.
 
 VSDebugPro extension offers a simple solution for this:
 
-```
+```console
 dumpmem
 Dump memory utility.
 ------------------------------------------------------------------
