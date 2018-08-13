@@ -7,3 +7,5 @@ exclude:
 
 plugins:
   - jekyll-sitemap
+
+highlighter: pygments
