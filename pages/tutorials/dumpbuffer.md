@@ -56,9 +56,9 @@ Syntax: <dumpmem> <optional flags> <filename> <address> <size>
 
 ###### Steps to dump `buffer` contents to disk:
 
-1. Start debugging the program
-2. Place a breakpoint at a carefully select point in code, where our data is available
-3. Go to VSDebugPro menu and open **Console**
+1. Start debugging the program.
+2. Place a breakpoint at a carefully select point in code, where our data is available.
+3. Go to VSDebugPro menu and open **Console**.
 4. Dump buffer contents with the following command:
 
 ```
@@ -70,3 +70,10 @@ the address of `buffer` and the size from `bufferSize` variable.
 
 
 ![Dump buffer](/assets/gif/dumpbuffer.gif)
+
+
+###### References
+
+---
+
+*[HxD](https://mh-nexus.de/en/hxd/) a free hex editor.*
