@@ -7,10 +7,12 @@ overview: true
 
 **Current Version:**
 {: align="center"}
-[3.1.0.3](http://bit.ly/2KLkoQQ)
+[3.2.0.0](http://bit.ly/2wgJLoh)
 {: align="center" class="}
 **History:**
 {: align="center"}
+[3.1.0.3](http://bit.ly/2KLkoQQ)
+{: align="center" class="}
 [3.1.0.2](http://bit.ly/2LLFVNR)
 {: align="center"}
 [3.1.0.1](http://bit.ly/2A5HuSf)
