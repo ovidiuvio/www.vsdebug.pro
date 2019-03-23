@@ -14,7 +14,7 @@ overview: true
 
 ###### *What versions of Visual Studio are supported?*
 {: align="center"}
-*VSDebugPro is available for VS2012, VS2013, VS2015, VS2017. Versions up to 2.0.7.4 are also compatible with VS2010.
+*VSDebugPro is available for VS2012, VS2013, VS2015, VS2017, VS2019. Versions up to 2.0.7.4 are also compatible with VS2010.
 Older versions are available on the [downloads](/pages/downloads.html) page.*
 {: align="center"}
 
