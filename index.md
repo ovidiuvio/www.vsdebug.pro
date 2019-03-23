@@ -14,7 +14,7 @@ dumping raw blocks of memory to a file without changing program code, loading bi
 {: align="center"}
 **Supported Environments:**
 {: align="center"}
-**IDE:** VS2012, VS2013, VS2015, VS2017
+**IDE:** VS2012, VS2013, VS2015, VS2017, **VS2019**
 {: align="center"}
 **Languages:** C/C++ , **Arch:** x86/x64
 {: align="center"}
