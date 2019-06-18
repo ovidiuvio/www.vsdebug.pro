@@ -23,6 +23,11 @@ Older versions are available on the [downloads](/pages/downloads.html) page.*
 *Yes. VSDebugPro uses [wow64ext](https://github.com/rwfpl/rewolf-wow64ext) library to call 64 bits NT Kernel functions.*
 {: align="center"}
 
+###### *Is remote debugging supported in VSDebugPro?*
+{: align="center"}
+*No. Unfortunately this is not supported.*
+{: align="center"}
+
 ###### *Can I use VSDebugPro for commercial work?*
 {: align="center"}
 *Yes. VSDebugPro is open source , licensed under [MIT](https://github.com/ovidiuvio/VSDebugPro/blob/master/LICENSE.md) license.*
