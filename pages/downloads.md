@@ -7,9 +7,11 @@ overview: true
 
 **Current Version:**
 {: align="center"}
-[3.3.0.1](http://bit.ly/2OHInYi)
+[3.4.0.1](https://bit.ly/3ym1lXY)
 {: align="center"}
 **History:**
+{: align="center"}
+[3.3.0.1](http://bit.ly/2OHInYi)
 {: align="center"}
 [3.3.0.0](http://bit.ly/2GKC7Zp)
 {: align="center"}
