@@ -1,2 +1,3 @@
-gem 'github-pages', group: :jekyll_plugins
+source 'https://rubygems.org'
+gem 'github-pages', '~> 226', group: :jekyll_plugins
 gem 'pygments.rb'
