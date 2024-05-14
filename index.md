@@ -14,10 +14,10 @@ dumping raw blocks of memory to a file without changing program code, loading bi
 {: align="center"}
 **Supported Environments:**
 {: align="center"}
-**IDE:** VS2010, VS2012 - **VS2019**
+**IDE:** VS2010, VS2012 - VS2019, **VS2022**
 {: align="center"}
 **Languages:** C/C++ , **Arch:** x86/x64
 {: align="center"}
-**OS:** Windows 10 ( 2.0.7.4+ ), Windows 8 / 8.1 ( 2.0.7.1+ ), Windows7
+**OS:** Windows 11, Windows 10 ( 2.0.7.4+ ), Windows 8 / 8.1 ( 2.0.7.1+ ), Windows7
 {: align="center"}
 
