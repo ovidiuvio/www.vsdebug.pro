@@ -11,6 +11,7 @@ dumping raw blocks of memory to a file without changing program code, loading bi
 {: align="center"}
 
 ![VSDebugPro Console](/assets/img/vsd_console.png)
+{: width=70% }
 {: align="center"}
 **Supported Environments:**
 {: align="center"}
