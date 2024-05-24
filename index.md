@@ -10,7 +10,7 @@ dumping raw blocks of memory to a file without changing program code, loading bi
 </p>
 {: align="center"}
 
-<img src="/assets/img/vsd_console.png" width="70%"/>
+<img src="/assets/img/vsd_console.png" width="70%" align="center"/>
 
 **Supported Environments:**
 {: align="center"}
