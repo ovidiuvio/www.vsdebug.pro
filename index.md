@@ -5,7 +5,7 @@ overview: true
 
 ---
 <p class="text-monospace">
-VSDebugPro is a Visual Studio extension for Visual C/C++ that adds several usefull debugging utilities such as
+VSDebugPro is a Visual Studio extension for Visual C/C++, C# that adds several usefull debugging utilities such as
 dumping raw blocks of memory to a file without changing program code, loading binary data from a file to a specific memory location, allocating new memory in the debugged process, and more.
 </p>
 {: align="center"}
