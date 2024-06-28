@@ -1,0 +1,21 @@
+<html>
+{% include head.html %}
+
+<body class="wrap">
+  {% include header.html %}
+  <div class="container-fluid">
+    <div class="row">
+      {% include docs-toc.html %}
+      <nav class="sidebar col-md-3 col-lg-2 d-md-block">
+      </nav>
+      <div class="content-wrapper">
+        <main role="main" class="content">
+            {{ content }}
+        </main>
+    </div>
+    </div>
+  </div>
+  {% include footer.html %}
+</body>
+
+</html>
