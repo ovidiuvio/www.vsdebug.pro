@@ -1,17 +1,17 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+            <li class="nav-item {% if page.url == '/' %}current{% endif %}">
+                <a class="nav-link" href="/"><span class="nav-text">Home</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/tutorials.html">Tutorials</a>
+            <li class="nav-item {% if page.url == '/pages/tutorials.html' %}current{% endif %}">
+                <a class="nav-link" href="/pages/tutorials.html"><span class="nav-text">Tutorials</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/faq.html">FAQ</a>
+            <li class="nav-item {% if page.url == '/pages/faq.html' %}current{% endif %}">
+                <a class="nav-link" href="/pages/faq.html"><span class="nav-text">FAQ</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/contact.html">Contact</a>
+            <li class="nav-item {% if page.url == '/pages/contact.html' %}current{% endif %}">
+                <a class="nav-link" href="/pages/contact.html"><span class="nav-text">Contact</span></a>
             </li>
         </ul>
         <span class="mr-3 ml-3">
