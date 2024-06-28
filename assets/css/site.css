@@ -21,6 +21,32 @@
   background-color: #17a2b8;
 }
 
+.code-box {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.code-header {
+  background-color: #e0e0e0;
+  padding: 5px 15px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+.code-box pre {
+  margin: 0;
+  padding: 15px;
+}
+.code-box code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 html {
     position: relative;
     min-height: 100%;

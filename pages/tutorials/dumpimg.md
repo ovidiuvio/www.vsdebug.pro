@@ -4,6 +4,7 @@ overview: true
 ---
 
 ---
+{::options parse_block_html="true" /}
 
 ##### Inspect an image in memory
 
@@ -12,6 +13,7 @@ without writing a debugging function into the program and without recompiling it
 
 For this purpose we will use the following simple c code:
 
+<div class="code-box">
 ```cpp
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -34,10 +36,11 @@ int main()
     return 0;
 }
 ```
-
+</div>
 In order to visualize the contents of `img` byte buffer above,  we are going
 to dump its contents to a file and open it with `IrfanView`.
 
+<div class="code-box">
 ```console
 dumpmem
 Dump memory utility.
@@ -53,7 +56,7 @@ Syntax: <dumpmem> <optional flags> <filename> <address> <size>
 	<size>     - size in bytes, can be an expression
 ------------------------------------------------------------------
 ```
-
+</div>
 ###### Steps to write the image to a file and load it in the viewer:
 
 1. Start debugging the program.
@@ -62,9 +65,11 @@ Syntax: <dumpmem> <optional flags> <filename> <address> <size>
 4. Specifiy a path to an image viewer that can open raw files. Click OK.
 5. Go to VSDebugPro menu and open **Console**.
 6. Dump image data with the following command:
+<div class="code-box">
 ```
 dumpmem lenna.raw img w * h * c
 ```
+</div>
 7. Click on the file link in `VSD Console` to open the image in viewer.
 
 The `dumpmem` utility uses the Visual Studio C++ debugger interface to automatically evaluate

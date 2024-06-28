@@ -4,15 +4,14 @@ overview: true
 ---
 
 ---
+{::options parse_block_html="true" /}
 
 ##### Save a memory block to disk
 
 This article shows how to dump a a block of memory to a file, while debugging the program,
 without writing a debugging function into the program and without recompiling it.
 
-For this purpose we will use the following simple c code:
-
-
+<div class="code-box">
 ```cpp
 int main()
 {
@@ -30,6 +29,7 @@ int main()
     return 0;
 }
 ```
+</div>
 [Download](https://dl.vsdebug.pro/CodeSamples/VSDebugProTestApp.zip)
 
 While this is a very simple piece of code, and writing a small function to save *`buffer`* contents
@@ -39,6 +39,7 @@ that we add some new debugging code.
 
 VSDebugPro extension offers a simple solution for this:
 
+<div class="code-box">
 ```console
 dumpmem
 Dump memory utility.
@@ -54,6 +55,7 @@ Syntax: <dumpmem> <optional flags> <filename> <address> <size>
 	<size>     - size in bytes, can be an expression
 ------------------------------------------------------------------
 ```
+</div>
 
 ###### Steps to dump `buffer` contents to disk:
 
@@ -62,9 +64,11 @@ Syntax: <dumpmem> <optional flags> <filename> <address> <size>
 3. Go to VSDebugPro menu and open **Console**.
 4. Dump buffer contents with the following command:
 
+<div class="code-box">
 ```
 dumpmem buffer.bin buffer bufferSize
 ```
+</div>
 
 The `dumpmem` utility uses the Visual Studio C++ debugger interface to automatically evaluate
 the address of `buffer` and the size from `bufferSize` variable.
