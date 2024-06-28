@@ -12,7 +12,7 @@
 
     <!-- local css -->
     <link rel="stylesheet" href="/assets/css/site.css">
-    <link rel="stylesheet" href="/assets/css/rouge.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
     
 	<!-- site icon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" >
@@ -25,5 +25,21 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-123054659-1');
+    </script>
+    <script>
+        function copyCode(button) {
+            var pre = button.parentElement.nextElementSibling;
+            var code = pre.querySelector('code');
+            var range = document.createRange();
+            range.selectNode(code);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            button.textContent = 'Copied!';
+            setTimeout(function() {
+                button.textContent = 'Copy';
+            }, 2000);
+        }
     </script> 
 </head>
