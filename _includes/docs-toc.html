@@ -1,13 +1,111 @@
-<div class="container-toc">
-<nav class="navbar navbar-expand d-flex flex-column align-items-start toc" id="toc">
-    <a class="navbar-brand" href="#">Table of Contents</a>
-    <ul class="navbar-nav d-flex flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" href="#section1">Section 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#section2">Section 2</a>
-      </li>
-      </ul>
+<nav class="toc" id="toc">
+  <h4 class="toc-title">Documentation</h4>
+  <ul class="nav flex-column">
+      <li class="nav-item {% if page.url == '/pages/tutorials.html' %}current{% endif %}">
+        <div class="nav-link collapsible  aria-expanded="false"">
+            <span class="nav-text">Tutorials</span>
+            <span class="toggle-icon">▼</span>
+        </div>
+        <ul class="nav flex-column sub-nav">
+          <li class="nav-item {% if page.url == '/pages/tutorials/dumpbuffer.html' %}current{% endif %}">
+            <a class="nav-link" href="/pages/tutorials/dumpbuffer.html">
+              <span class="nav-text">Save memory</span>
+            </a>
+          </li>
+          <li class="nav-item {% if page.url == '/pages/tutorials/dumpimg.html' %}current{% endif %}">
+            <a class="nav-link" href="/pages/tutorials/dumpimg.html">
+              <span class="nav-text">Save and view an image</span>
+            </a>
+          </li>
+        </ul>
+     </li>
+  </ul>
 </nav>
-</div>
+
+<style>
+  .toc {
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-radius: 0.25rem;
+  }
+  
+  .toc-title {
+      margin-bottom: 1rem;
+  }
+  
+  .toc .nav-item {
+      width: 100%;
+  }
+  
+  .toc .nav-link {
+      padding: 0.5rem 0;
+      color: #495057;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .toc .nav-item.current > .nav-link {
+      font-weight: bold;
+      color: #007bff;
+  }
+
+  .toc .sub-nav {
+      padding-left: 1rem;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      max-height: 0;
+  }
+
+  .toc .sub-nav .nav-link {
+      padding: 0.25rem 0;
+      font-size: 0.9em;
+  }
+
+  .toc .collapsible {
+      cursor: pointer;
+  }
+
+  .toc .toggle-icon {
+      font-size: 0.8em;
+      transition: transform 0.3s ease;
+  }
+
+  .toc .collapsible[aria-expanded="true"] .toggle-icon {
+      transform: rotate(180deg);
+  }
+
+  .toc .sub-nav.show {
+      max-height: 500px; /* Adjust this value as neede    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var collapsibles = document.querySelectorAll('.toc .collapsible');
+  
+  collapsibles.forEach(function(collapsible) {
+      collapsible.addEventListener('click', function(event) {
+          event.stopPropagation();
+          var subNav = this.nextElementSibling;
+          var isExpanded = this.getAttribute('aria-expanded') === 'true';
+          
+          this.setAttribute('aria-expanded', !isExpanded);
+          subNav.classList.toggle('show');
+      });
+      
+      // Expand the section if it contains the current page
+      var subNav = collapsible.nextElementSibling;
+      if (subNav.querySelector('.current')) {
+          collapsible.setAttribute('aria-expanded', 'true');
+          subNav.classList.add('show');
+      }
+  });
+
+  // Prevent collapsing when clicking on subsection links
+  var subNavLinks = document.querySelectorAll('.toc .sub-nav .nav-link');
+  subNavLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+          event.stopPropaga        });
+  });
+});
+</script>

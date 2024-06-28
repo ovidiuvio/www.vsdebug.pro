@@ -1,21 +1,50 @@
-<html>
 {% include head.html %}
+{% include header.html %}
+{% include banner.html %}
 
-<body class="wrap">
-  {% include header.html %}
-  <div class="container-fluid">
-    <div class="row">
-      {% include docs-toc.html %}
-      <nav class="sidebar col-md-3 col-lg-2 d-md-block">
+<div class="container-fluid docs-container">
+  <div class="row justify-content-center">
+    <div class="col-md-3 col-lg-3 col-xl-2">
+      <nav class="sidebar">
+        {% include docs-toc.html %}
       </nav>
-      <div class="content-wrapper">
-        <main role="main" class="content">
-            {{ content }}
-        </main>
     </div>
-    </div>
-  </div>
-  {% include footer.html %}
-</body>
+    <div class="col-md-9 col-lg-9 col-xl-9">
+      <main role="main" class="content">
+        {{ content }}
+      </main>
+   </div>
+</div>
 
-</html>
+<style>
+.docs-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: 20px;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.content {
+  padding: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .docs-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+</style>
