@@ -10,7 +10,6 @@ The `exec` command allows you to execute a series of commands defined in a YAML 
 {: .code-box}
 >{: .code-header}
 >Syntax
-> <button onclick="copyCode(this)" class="copy-button">Copy</button>
 ```code
 exec <yamlFilePath> [arg1] [arg2] ... [argN]
 ```
@@ -42,6 +41,80 @@ commands:
 
 - `variables`: A dictionary of key-value pairs that can be used in the commands with mustache templating. Can be a *constant*, *watch expression*, or script *argument* and must not contain any spaces.
 - `commands`: A list of commands to be executed in order.
+
+#####  Variables Definition & Templating
+---
+Variables can be defined and templated in the following ways:
+
+###### Constants:
+
+<div class="code-box">
+```yaml
+variables:
+  var1: "filename.txt"
+```
+</div>
+
+###### Watch / Debugger expression for evaluation:
+<div class="code-box">
+>{: .code-header}
+>Sample code
+```cpp
+int main()
+{
+    // buffer size
+    int   bufferSize   = 1024;
+    // create buffer
+    void* buffer       = calloc(1, bufferSize);
+    // release memory
+    free(buffer);
+    return 0;
+}
+```
+</div>
+<div class="code-box">
+>{: .code-header}
+>Script variables using definitions in the code
+```yaml
+variables:
+  # var1 is evaluated in debugger and replaced with 1024 (see code above)
+  var1: "bufferSize"
+  # var2 is evaluated in debugger as (512+512) and replaced with result: 1024 (see code above)
+  # NOTE: expressions must not contain spaces! "(512 + 512)" will not work.
+  var2: "512+512"
+```
+</div>
+
+###### Script arguments:
+
+{: .code-box}
+```
+exec dump.yaml buffer.bin buffer 1024
+```
+
+
+<div class="code-box">
+>{: .code-header}
+>dump.yaml
+{% raw %}
+```yaml
+variables:
+  file: "{{$1}}"
+  address: "{{$2}}"
+  size: "{{$3}}"
+
+commands:
+  - dumpmem -f {{file}} {{address}} {{size}}
+```
+{% endraw %}
+</div>
+
+The above script results in the following command execution:
+
+{: .code-box}
+```
+dumpmem buffer.bin buffer 1024
+```
 
 #####  Example code and yaml script 
 ---
