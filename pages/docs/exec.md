@@ -40,7 +40,7 @@ commands:
 ```
 </div>
 
-- `variables`: A dictionary of key-value pairs that can be used in the commands with mustache templating. Can be a constant, watch expression, or script argument and must not contain any spaces.
+- `variables`: A dictionary of key-value pairs that can be used in the commands with mustache templating. Can be a *constant*, *watch expression*, or script *argument* and must not contain any spaces.
 - `commands`: A list of commands to be executed in order.
 
 #####  Example code and yaml script 

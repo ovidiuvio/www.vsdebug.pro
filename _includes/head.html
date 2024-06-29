@@ -1,9 +1,8 @@
 <head>
     <!-- Javascript includes -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
-    </script>
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
 
@@ -13,33 +12,42 @@
     <!-- local css -->
     <link rel="stylesheet" href="/assets/css/site.css">
     <link rel="stylesheet" href="/assets/css/syntax.css">
-    
-	<!-- site icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" >
-    
+
+    <!-- site icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123054659-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-123054659-1');
+        gtag('config', 'UA-123054659-1');
     </script>
     <script>
         function copyCode(button) {
-            var pre = button.parentElement.nextElementSibling;
-            var code = pre.querySelector('code');
-            var range = document.createRange();
-            range.selectNode(code);
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(range);
-            document.execCommand("copy");
-            window.getSelection().removeAllRanges();
-            button.textContent = 'Copied!';
-            setTimeout(function() {
-                button.textContent = 'Copy';
+            // Find the closest parent .code-box
+            var codeBox = button.closest('.code-box');
+
+            // Find the <code> element within this .code-box
+            var codeElement = codeBox.querySelector('code');
+
+            var textArea = document.createElement('textarea');
+            textArea.value = codeElement.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+
+            // Update button text and icon
+            var originalContent = button.innerHTML;
+            button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Copied!';
+
+            // Reset button after 2 seconds
+            setTimeout(function () {
+                button.innerHTML = originalContent;
             }, 2000);
         }
-    </script> 
+    </script>
 </head>
