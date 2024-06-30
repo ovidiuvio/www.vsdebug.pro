@@ -3,68 +3,76 @@ layout: docs
 ---
 {::options parse_block_html="true" /}
 
-# memcpy (Memory Copy Utility)
+##### memcpy (Memory Copy Utility)
+---
 
-## Syntax
+##### Description
+The `memcpy` command allows you to copy data from one memory location to another within the debugged process. This feature is useful for duplicating memory regions, moving data, or creating backups of memory contents within the process's address space.
+
+{: .code-box}
+>{: .code-header}
+>Syntax
 ```
 memcpy <dst> <src> <size>
 ```
 
-## Description
-The `memcpy` command allows you to copy data from one memory location to another within the debugged process. This feature is useful for duplicating memory regions, moving data, or creating backups of memory contents within the process's address space.
-
-## Parameters
+##### Parameters
 
 - `<dst>`: Destination address where the data will be copied to.
 - `<src>`: Source address where the data will be copied from.
 - `<address>`: Number of bytes to copy from the source to the destination.
 
-## Usage Notes
+##### Usage Notes
 
 1. The command uses the current process context in the debugger.
-2. Addresses can be specified in various formats:
-   - Hexadecimal: Prefixed with '0x' (e.g., 0x00656789)
-   - Decimal: Plain number (e.g., 6789456)
-   - Symbol name: If symbols are loaded (e.g., &myVariable)
+2. `Addresses` can be specified in various formats:
+   - `Hexadecimal`: Prefixed with '0x' (e.g., 0x00656789)
+   - `Decimal`: Plain number (e.g., 6789456)
+   - `Symbol` name: If symbols are loaded (e.g., &myVariable)
 3. Size can use expressions for convenience (e.g., 1024*1024 for 1 MB).
 4. Ensure that both source and destination memory ranges are within the process's address space.
 5. The destination range should be writable.
 6. Be cautious when source and destination ranges overlap, as it may lead to unexpected results.
 
-## Examples
+##### Examples
 
 1. Basic usage:
+
+   {: .code-box}
    ```
    memcpy 0x00656589 0x00656789 200
    ```
    Copies 200 bytes from address 0x00656789 to address 0x00656589.
 
 2. Using symbol names:
+
+   {: .code-box}
    ```
    memcpy &destBuffer &sourceBuffer 256
    ```
    Copies 256 bytes from the address of `sourceBuffer` to the address of `destBuffer`.
 
 3. Copying a larger region:
+
+   {: .code-box}
    ```
    memcpy 0x20000000 0x10000000 1024*1024
    ```
    Copies 1 MB of data from address 0x10000000 to address 0x20000000.
 
-## Error Handling
+##### Error Handling
 
 - Invalid or inaccessible address: Shows an error if either the source or destination address is invalid or not accessible.
 - Destination not writable: Displays an error message if the destination range is not writable.
 - Size exceeds available memory: Copies as much as possible and reports actual bytes copied.
 - Memory read/write issues: Shows appropriate error messages if unable to read from source or write to destination.
 
-## Related Commands
+##### Example Code and Usage
 
-- `dumpmem`: Dumps memory contents to a file.
-- `loadmem`: Loads data from a file into memory.
-- `memset`: Fills a memory region with a specified value.
-
-## Example Code and Usage
+<div class="code-box">
+>{: .code-header}
+>Sample code
+> <button onclick="copyCode(this)" class="copy-button">Copy</button>
 
 ```cpp
 #include <cstdlib>
@@ -105,15 +113,18 @@ int main()
     return 0;
 }
 ```
+</div>
 
 After initializing the buffers and before the second print statement, you can use `memcpy` to copy the contents of `sourceBuffer` to `destBuffer`:
 
+{: .code-box}
 ```
 memcpy destBuffer sourceBuffer 48
 ```
 
 When you run the program after using `memcpy`, it will output:
 
+{: .code-box}
 ```
 Before memcpy:
 Source buffer: ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUV
