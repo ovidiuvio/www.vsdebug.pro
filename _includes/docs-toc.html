@@ -2,11 +2,16 @@
   <h4 class="toc-title">Documentation</h4>
   <ul class="nav flex-column">
     <li class="nav-item">
-      <div class="nav-link collapsible" aria-expanded="false">
+      <div class="nav-link collapsible" aria-expanded="true">
         <span class="nav-text">Commands</span>
         <span class="toggle-icon">▼</span>
       </div>
       <ul class="nav flex-column sub-nav">
+        <li class="nav-item {% if page.url == '/pages/docs/dumpmem.html' %}current{% endif %}">
+          <a class="nav-link" href="/pages/docs/dumpmem.html">
+            <span class="nav-text">dumpmem</span>
+          </a>
+        </li>
         <li class="nav-item {% if page.url == '/pages/docs/exec.html' %}current{% endif %}">
           <a class="nav-link" href="/pages/docs/exec.html">
             <span class="nav-text">exec</span>
@@ -15,7 +20,7 @@
       </ul>
     </li>
     <li class="nav-item">
-      <div class="nav-link collapsible" aria-expanded="false">
+      <div class="nav-link collapsible" aria-expanded="true">
         <span class="nav-text">Tutorials</span>
         <span class="toggle-icon">▼</span>
       </div>

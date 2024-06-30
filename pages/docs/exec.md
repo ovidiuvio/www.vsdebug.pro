@@ -3,8 +3,10 @@ layout: docs
 ---
 {::options parse_block_html="true" /}
 
-##### Execute Yaml Script
+##### exec (Execute Yaml Script)
 ---
+
+##### Description
 The `exec` command allows you to execute a series of commands defined in a YAML file. This feature enables you to create reusable scripts and automation for debugging tasks.
 
 {: .code-box}
