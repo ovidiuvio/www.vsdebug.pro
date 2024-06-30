@@ -3,23 +3,23 @@ layout: docs
 ---
 {::options parse_block_html="true" /}
 
-# memset (Memory Set Utility)
+##### memset (Memory Set Utility)
 
 ## Syntax
 ```
 memset <dst> <val> <size>
 ```
 
-## Description
+##### Description
 The `memset` command allows you to fill a block of memory with a specified value in the debugged process. This feature is useful for initializing memory regions, clearing data, or setting up specific memory patterns for testing and debugging purposes.
 
-## Parameters
+##### Parameters
 
 - `<dst>`: Destination address where the memory will be set.
 - `<val>`: The value to set (0x00 - 0xFF). This is treated as a byte value.
 - `<size>`: Number of bytes to set starting from the destination address.
 
-## Usage Notes
+##### Usage Notes
 
 1. The command uses the current process context in the debugger.
 2. The destination address can be specified in various formats:
@@ -30,7 +30,7 @@ The `memset` command allows you to fill a block of memory with a specified value
 4. Size can use expressions for convenience (e.g., 1024*1024 for 1 MB).
 5. Ensure that the destination memory range is within the process's address space and is writable.
 
-## Examples
+##### Examples
 
 1. Basic usage:
    ```
@@ -50,7 +50,7 @@ The `memset` command allows you to fill a block of memory with a specified value
    ```
    Sets 1 MB of memory starting at address 0x20000000 to the value 0xAA.
 
-## Error Handling
+##### Error Handling
 
 - Invalid or inaccessible address: Shows an error if the destination address is invalid or not accessible.
 - Destination not writable: Displays an error message if the destination range is not writable.
@@ -58,13 +58,7 @@ The `memset` command allows you to fill a block of memory with a specified value
 - Size exceeds available memory: Sets as much as possible and reports actual bytes set.
 - Memory write issues: Shows appropriate error messages if unable to write to the specified memory range.
 
-## Related Commands
-
-- `dumpmem`: Dumps memory contents to a file.
-- `loadmem`: Loads data from a file into memory.
-- `memcpy`: Copies data between memory locations.
-
-## Example Code and Usage
+##### Example Code and Usage
 
 ```cpp
 #include <cstdlib>
