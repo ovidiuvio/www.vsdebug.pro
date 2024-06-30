@@ -2,7 +2,12 @@
   <h4 class="toc-title">Documentation</h4>
   <ul class="nav flex-column">
     <li class="nav-item">
-      <div class="nav-link collapsible" aria-expanded="true">
+      <li class="nav-item {% if page.url == '/pages/docs.html' %}current{% endif %}">
+        <a class="nav-link" href="/pages/docs.html">
+          <span class="nav-text">Common Concepts</span>
+        </a>
+      </li>
+      <div class="nav-link collapsible" aria-expanded="false">
         <span class="nav-text">Commands</span>
         <span class="toggle-icon">▼</span>
       </div>
@@ -20,7 +25,7 @@
       </ul>
     </li>
     <li class="nav-item">
-      <div class="nav-link collapsible" aria-expanded="true">
+      <div class="nav-link collapsible" aria-expanded="false">
         <span class="nav-text">Tutorials</span>
         <span class="toggle-icon">▼</span>
       </div>
@@ -43,7 +48,6 @@
 <style>
     .toc {
         padding: 1rem;
-        background-color: #f8f9fa;
         border-radius: 0.25rem;
     }
     
