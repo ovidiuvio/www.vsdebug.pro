@@ -15,7 +15,7 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
 ---
 
 - Save memory blocks from `Minidumps`
-- Supports remote debugging sessions
+- Supports `remote debugging` sessions
 - Works with `Visual Studio` for `ARM`
 - Works with ARM programs while debugging
 - Works with x64 programs running emulated on `ARM64EC`
