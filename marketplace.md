@@ -38,7 +38,7 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
         exec  Executes commands from a specified YAML file with Mustache templating.
     ```
 
- - [Batch commands:]( https://www.vsdebug.pro/pages/docs/exec.html)
+ - [Batch commands](https://www.vsdebug.pro/pages/docs/exec.html)
 
     `exec <yamlFilePath> [arg1] [arg2] ... [argN]`
 
@@ -51,25 +51,25 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
     - command1 {{var1}} {{var2}}
     - command2 {{var1}} {{var2}}
     ```
-- Memory dump
+- [Memory dump](https://www.vsdebug.pro/pages/docs/dumpmem.html)
 
     `dumpmem [options] <filename> <address> <size>`
 
-- Memory write
+- [Memory write](https://www.vsdebug.pro/pages/docs/loadmem.html)
 
     `loadmem <file> <address> <size>`
-    
-- Memory diff
 
-    `<diff> <addr1> <addr2> <size>`
-
-- Memory copy
+- [Memory copy](https://www.vsdebug.pro/pages/docs/memcpy.html)
 
     `memcpy <dst> <src> <size>`
 
-- Write memory with a pattern
+- [Write memory with a pattern](https://www.vsdebug.pro/pages/docs/memset.html)
 
     `memset <dst> <val> <size>`
+
+- Memory diff
+
+    `<diff> <addr1> <addr2> <size>`
 
 
 
