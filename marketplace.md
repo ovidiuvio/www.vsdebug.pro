@@ -55,6 +55,10 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
 
     `dumpmem [options] <filename> <address> <size>`
 
+- [Hex dump](https://www.vsdebug.pro/pages/docs/hexdump.html)
+
+    `hexdump <optional flags> <filename> <address> <size> [columns] [bytesPerRow]`
+
 - [Memory write](https://www.vsdebug.pro/pages/docs/loadmem.html)
 
     `loadmem <file> <address> <size>`
@@ -66,6 +70,10 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
 - [Write memory with a pattern](https://www.vsdebug.pro/pages/docs/memset.html)
 
     `memset <dst> <val> <size>`
+
+- [Memory allocation](https://www.vsdebug.pro/pages/docs/malloc.html)
+
+    `malloc <size>`
 
 - Memory diff
 
