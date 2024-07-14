@@ -1,5 +1,6 @@
 ---
 layout: docs
+title: Malloc | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 {::options parse_block_html="true" /}
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 overview: true
+title: Home | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 
 ---

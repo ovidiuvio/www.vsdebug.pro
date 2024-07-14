@@ -1,6 +1,7 @@
 ---
 layout: docs
 overview: true
+title: Tutorial - Save image | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 
 ---

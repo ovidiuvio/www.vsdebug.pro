@@ -1,6 +1,7 @@
 ---
 layout: default
 overview: true
+title: Contact | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 
 ---

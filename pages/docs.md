@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Your Page Title
+title: Docs | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 
 #### VSDebugPro Common Concepts and Features

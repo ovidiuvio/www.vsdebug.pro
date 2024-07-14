@@ -1,12 +1,13 @@
 ---
 layout: docs
 overview: true
+title:  Tutorial - Save c# array | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 
 ---
 {::options parse_block_html="true" /}
 
-##### Save a C# array to disk
+##### Save a c# array to disk
 
 This article shows how to dump a C# byte array to a file, while debugging the program and without writing any code to save the data.
 

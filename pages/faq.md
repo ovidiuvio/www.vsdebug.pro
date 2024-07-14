@@ -1,6 +1,7 @@
 ---
 layout: default
 overview: true
+title: F.A.Q. | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 
 ---

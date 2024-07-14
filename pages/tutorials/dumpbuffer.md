@@ -1,6 +1,7 @@
 ---
 layout: docs
 overview: true
+title: Tutorial - Memory dump | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 
 ---
