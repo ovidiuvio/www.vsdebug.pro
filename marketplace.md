@@ -3,12 +3,12 @@ is an open source Visual Studio extension for Visual `C/C++, C#` that adds a `co
 
 **Current supported VS versions:**  VS2019, VS2022
 
-For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[www.vsdebug.pro](http://www.vsdebug.pro)**
+For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[www.vsdebug.pro](https://www.vsdebug.pro)**
 
 ---
 [![Build status](https://ci.appveyor.com/api/projects/status/y1b8p5ncabjbv4kn?svg=true)](https://ci.appveyor.com/project/ovidiuvio/vsdebugpro)
 
-![](http://www.vsdebug.pro/assets/gif/dumpbuffer.gif)
+![](https://www.vsdebug.pro/assets/gif/dumpbuffer.gif)
 
 **Features:**
 
@@ -82,12 +82,12 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
 
 
 
-[**Docs**](http://www.vsdebug.pro/pages/docs.html)
+[**Docs**](https://www.vsdebug.pro/pages/docs.html)
 
 [**Video Tutorial**](https://youtu.be/u7JfatQdGs0)
 
 **Contact**
 
- **www: [www.vsdebug.pro](http://www.vsdebug.pro)**
+ **www: [www.vsdebug.pro](https://www.vsdebug.pro)**
 
  **mail: [ovidiu@vsdebug.pro](mailto:ovidiu@vsdebug.pro?subject=VSDebugPro)**
