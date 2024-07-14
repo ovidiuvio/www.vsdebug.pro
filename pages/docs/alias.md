@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Alias | VSDebugPro - Enhanced debugging for Visual Studio
+keywords: VSDebugPro, alias command, custom shortcuts, debugging efficiency, command customization
+description: Simplify your debugging workflow with VSDebugPro's alias command. Learn how to create custom shortcuts for frequently used commands, reducing typing and streamlining your debugging sessions.
 ---
 {::options parse_block_html="true" /}
 

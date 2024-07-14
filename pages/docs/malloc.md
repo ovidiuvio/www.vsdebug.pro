@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Malloc | VSDebugPro - Enhanced debugging for Visual Studio
+keywords: VSDebugPro, malloc, memory allocation, dynamic allocation, debugging command, memory management, heap allocation
+description: Dynamically allocate memory within your debugged process using VSDebugPro's malloc command. This page provides instructions on how to allocate memory blocks on the heap during debugging, assisting in testing memory management and simulating allocation scenarios.
 ---
 {::options parse_block_html="true" /}
 

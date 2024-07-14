@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Memory Dump | VSDebugPro - Enhanced debugging for Visual Studio
+keywords: VSDebugPro, dumpmem, memory dump, save memory, debugging command, data analysis, memory examination, writemem, readmem, read process memory, write process memory
+description: Dump memory contents with precision using VSDebugPro's dumpmem command. This page details how to save specific memory regions to files, facilitating offline analysis and data preservation during debugging.
 ---
 {::options parse_block_html="true" /}
 

@@ -2,6 +2,8 @@
 layout: default
 overview: true
 title: Home | VSDebugPro - Enhanced debugging for Visual Studio
+keywords: VSDebugPro, Visual Studio, C++, C#, debugging tools, memory dump, data loading, batch commands, debugging extension, developer tools
+description: Debug like a pro with VSDebugPro, a powerful Visual Studio extension for C/C++ and C#. Dump memory, load data, execute batch commands, and streamline your debugging workflow. Download VSDebugPro for free and take control of your debugging sessions.
 ---
 
 ---

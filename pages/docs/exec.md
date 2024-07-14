@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Batch Commands | VSDebugPro - Enhanced debugging for Visual Studio
+keywords: VSDebugPro, exec command, YAML scripts, batch commands, debugging automation, scripting, automated debugging tasks
+description: Automate your debugging tasks with VSDebugPro's exec command. Learn how to create and run YAML scripts to execute sequences of commands, saving time and effort during complex debugging scenarios.
 ---
 {::options parse_block_html="true" /}
 

@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Memset | VSDebugPro - Enhanced debugging for Visual Studio
+keywords: VSDebugPro, memset, memory initialization, clear memory, set memory values, debugging command, memory manipulation
+description: Efficiently initialize or clear memory regions with VSDebugPro's memset command. This page explains how to set a block of memory to a specific value, streamlining initialization tasks and aiding in debugging memory-related issues.
 ---
 {::options parse_block_html="true" /}
 

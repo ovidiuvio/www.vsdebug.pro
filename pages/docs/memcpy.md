@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Memcpy | VSDebugPro - Enhanced debugging for Visual Studio
+keywords: VSDebugPro, memcpy, copy memory, data duplication, memory manipulation, debugging tools
+description: Manipulate memory efficiently with VSDebugPro's memcpy command. This documentation explains how to copy data between memory locations within your debugged process, enabling data duplication and manipulation for testing and debugging purposes.
 ---
 {::options parse_block_html="true" /}
 

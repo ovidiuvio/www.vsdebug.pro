@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Hex Dump | VSDebugPro - Enhanced debugging for Visual Studio
+keywords: VSDebugPro, hexdump, memory visualization, hex dump, binary data analysis, memory inspection, debugging tools
+description: Visualize raw memory content in a readable format with hexdump. This command generates formatted hex dumps of memory regions, making it easier to analyze binary data and identify patterns during debugging.
 ---
 {::options parse_block_html="true" /}
 
