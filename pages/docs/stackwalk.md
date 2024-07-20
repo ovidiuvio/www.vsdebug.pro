@@ -66,39 +66,125 @@ stackwalk [-o <filename>] [depth] [all]
 
 ##### Example Output
 
+{: .code-box}
+```cpp
+#include <Windows.h>
+#include <string>
+#include <iostream>
+
+void five(const std::string& msg, int depth) {
+    depth++;
+    std::cout << msg << std::endl;
+}
+
+void four(const std::string& msg, int depth) {
+    depth++;
+    five(msg, depth);
+}
+
+void three(const std::string& msg, int depth) {
+    depth++;
+    four(msg, depth);
+}
+
+void two(const std::string& msg, int depth) {
+    depth++;
+    three(msg, depth);
+}
+
+void one(const std::string& msg, int depth) {
+    depth++;
+    two(msg, depth);
+}
+
+int main()
+{
+    int depth = 0;
+    one("callstack", depth);
+
+    return 0;
+}
 ```
-Thread ID: 1234, Name: Main Thread
+
+
+
+<div class="code-box">
+>{: .code-header}
+>Stack trace in function five:
+
+```
+Stack Dump:
+===========
+Thread ID: 14520, Name: 
 -------------------------------------------
 Frame 0:
-  Function: main
-  File: c:\project\main.cpp (Line 45)
-  Module: myapp.exe
-  Address: 0x00007FF65C3012D0
+  Function: five
+  Local Variables:
+    depth = 5 (int)
+    msg = "callstack" (const std::string &)
+  Parameters:
+    msg = {...} (const std::string &)
+    depth = 5 (int)
 
 Frame 1:
-  Function: initialize
-  File: c:\project\init.cpp (Line 23)
-  Module: myapp.exe
-  Address: 0x00007FF65C301100
+  Function: four
+  Local Variables:
+    depth = 4 (int)
+    msg = "callstack" (const std::string &)
+  Parameters:
+    msg = {...} (const std::string &)
+    depth = 4 (int)
 
-...
+Frame 2:
+  Function: three
+  Local Variables:
+    depth = 3 (int)
+    msg = "callstack" (const std::string &)
+  Parameters:
+    msg = {...} (const std::string &)
+    depth = 3 (int)
+
+Frame 3:
+  Function: two
+  Local Variables:
+    depth = 2 (int)
+    msg = "callstack" (const std::string &)
+  Parameters:
+    msg = {...} (const std::string &)
+    depth = 2 (int)
+
+Frame 4:
+  Function: one
+  Local Variables:
+    depth = 1 (int)
+    msg = "callstack" (const std::string &)
+  Parameters:
+    msg = {...} (const std::string &)
+    depth = 1 (int)
+
+Frame 5:
+  Function: main
+  Local Variables:
+    depth = 0 (int)
+  Parameters:
 ```
+</div>
 
-## Notes
+##### Notes
 
 - The `stackwalk` command requires the debugger to be in break mode. If the debugger is running, the command will fail.
 - Symbol information must be available for best results. Without symbols, some information (like function names and source locations) may be missing.
 - The depth of the stack dump may be limited by the debugger or the process being debugged.
 - Large stack dumps, especially when dumping all threads, can take some time to generate.
 
-## Best Practices
+##### Best Practices
 
 1. Start with dumping only the current thread's stack before exploring all threads.
 2. Use a reasonable depth limit when dealing with deep recursion or very large call stacks.
 3. When investigating a specific issue, focus on the relevant threads rather than dumping all threads.
 4. Save stack dumps to files for later analysis or comparison.
 
-## Troubleshooting
+##### Troubleshooting
 
 - If the output lacks detailed information, ensure that debug symbols are loaded correctly.
 - If the command fails, make sure the debugger is in break mode and attached to a process.
