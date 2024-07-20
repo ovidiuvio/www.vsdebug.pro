@@ -1,71 +1,70 @@
 ---
 layout: docs
 title: Stack Walk | VSDebugPro
-keywords: VSDebugPro, dumpmem, memory dump, save memory, debugging command, data analysis, memory examination, writemem, readmem, read process memory, write process memory
-description: Dump memory contents with precision using VSDebugPro's dumpmem command. This page details how to save specific memory regions to files, facilitating offline analysis and data preservation during debugging.
+keywords: VSDebugPro, debugging command, data analysis, program debugging, visual studio debugging, stack dump ,stack walk, program stack, callstack
+description: Performs a structured dump of the callstack for the current thread or all threads in the debugged process.
 ---
 {::options parse_block_html="true" /}
 
-# stackwalk Command
+##### stackwalk (Stack walk utility)
 
-## Overview
+##### Description
 
 The `stackwalk` command in VSDebugPro performs a structured dump of the call stack for the current thread or all threads in the debugged process. It provides a detailed view of the program's execution state, which is crucial for understanding the flow of control and diagnosing issues.
 
-## Syntax
+##### Syntax
 
+{: .code-box}
+>{: .code-header}
+>Syntax
 ```
 stackwalk [-o <filename>] [depth] [all]
 ```
 
-## Parameters
+##### Parameters
 
 - `-o <filename>`: Optional. Specifies the output file to write the stack dump. If not provided, the output is displayed in the console.
 - `depth`: Optional. Specifies the number of frames to dump per thread. If not provided, all frames are dumped.
 - `all`: Optional. If specified, dumps the stack for all threads. Otherwise, only the current thread's stack is dumped.
 
-## Usage Examples
+##### Usage Examples
 
 1. Dump current thread's stack to console:
+
+   {: .code-box}
    ```
    stackwalk
    ```
 
 2. Dump current thread's stack to a file:
+
+   {: .code-box}
    ```
    stackwalk -o stack.txt
    ```
 
 3. Dump the first 10 frames of the current thread's stack:
+
+   {: .code-box}
    ```
    stackwalk 10
    ```
 
 4. Dump all threads' stacks to a file:
+
+   {: .code-box}
    ```
    stackwalk -o allstacks.txt all
    ```
 
 5. Dump the first 5 frames of all threads' stacks:
+
+   {: .code-box}
    ```
    stackwalk -o stacks.txt 5 all
    ```
 
-## Output Format
-
-The output of the `stackwalk` command includes the following information for each frame:
-
-- Frame number
-- Function name
-- Source file and line number (if available)
-- Module name
-- Instruction pointer address
-
-For each thread (when using the `all` option), it also includes:
-- Thread ID
-- Thread name (if available)
-
-## Example Output
+##### Example Output
 
 ```
 Thread ID: 1234, Name: Main Thread
@@ -91,11 +90,6 @@ Frame 1:
 - Symbol information must be available for best results. Without symbols, some information (like function names and source locations) may be missing.
 - The depth of the stack dump may be limited by the debugger or the process being debugged.
 - Large stack dumps, especially when dumping all threads, can take some time to generate.
-
-## Related Commands
-
-- `print`: Evaluates and prints the value of a symbol or expression.
-- `dumpmem`: Dumps memory contents to a file.
 
 ## Best Practices
 
