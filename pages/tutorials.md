@@ -1,7 +1,7 @@
 ---
 layout: docs
 overview: true
-title: Tutorials | VSDebugPro - Enhanced debugging for Visual Studio
+title: Tutorials | VSDebugPro
 ---
 
 ---

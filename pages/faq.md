@@ -1,7 +1,7 @@
 ---
 layout: default
 overview: true
-title: F.A.Q. | VSDebugPro - Enhanced debugging for Visual Studio
+title: F.A.Q. | VSDebugPro
 keywords: VSDebugPro FAQ, supported versions, 64-bit compatibility, remote debugging, licensing, troubleshooting, common issues, VSDebugPro help
 description: Get answers to frequently asked questions about VSDebugPro. Find information on supported Visual Studio versions, compatibility with 64-bit programs, remote debugging capabilities, licensing, and more.
 ---

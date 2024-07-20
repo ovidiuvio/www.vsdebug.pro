@@ -1,7 +1,7 @@
 ---
 layout: docs
 overview: true
-title: Tutorial - Memory dump | VSDebugPro - Enhanced debugging for Visual Studio
+title: Tutorial - Memory dump | VSDebugPro
 keywords: VSDebugPro tutorial, memory dump tutorial, save memory to file, debugging tips, offline data analysis, troubleshoot memory issues, writemem, readmem
 description: Master the art of memory dumps with VSDebugPro. This tutorial provides a step-by-step guide on saving memory blocks to disk during debugging, enabling you to analyze data offline and troubleshoot issues effectively.
 ---

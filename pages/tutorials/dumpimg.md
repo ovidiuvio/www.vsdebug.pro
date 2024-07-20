@@ -1,7 +1,7 @@
 ---
 layout: docs
 overview: true
-title: Tutorial - Save image | VSDebugPro - Enhanced debugging for Visual Studio
+title: Tutorial - Save image | VSDebugPro
 keywords: VSDebugPro tutorial, image debugging, dump image data, view memory as image, image processing, debugging tips
 description: Visualize image data directly from memory with VSDebugPro. This tutorial demonstrates how to dump image data to a file and open it in an image viewer, simplifying image processing debugging tasks.
 ---

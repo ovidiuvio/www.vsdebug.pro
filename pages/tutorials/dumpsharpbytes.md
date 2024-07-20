@@ -1,7 +1,7 @@
 ---
 layout: docs
 overview: true
-title:  Tutorial - Save c# array | VSDebugPro - Enhanced debugging for Visual Studio
+title:  Tutorial - Save c# array | VSDebugPro
 keywords: VSDebugPro tutorial, C# debugging, save byte array to file, data inspection, offline analysis, C# array manipulation
 description: Effortlessly save C# byte arrays to disk during debugging with VSDebugPro. This tutorial guides you through the process of dumping array contents to a file, allowing for convenient offline analysis and data inspection.
 ---
