@@ -3,7 +3,12 @@
     background-color: #e9ecef;
 }
 
+.navbar-bg-dark {
+  background-color: #222;
+}
+
 .navbar-nav .nav-item .nav-link .nav-text {
+  color: #fff;
   display: inline-block;
   padding: 0.5em 0.5em;
   font-size: 1em;
