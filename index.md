@@ -19,13 +19,11 @@ dumping raw blocks of memory to a file without changing program code, loading bi
 <br />
 <br />
 
----
+###### **Available for:**
 
-###### Available for:
+**`VS2010 - VS2022`, `C/C++`, `C#`, `x86/64`, `Arm64/Arm64EC`**
 
-`VS2010 - VS2022`, `C/C++`, `C#`, `x86/64`, `Arm64/Arm64EC`
-
-###### Features:
+###### **Features:**
 ---
 
 - Save memory blocks from `Minidumps`
@@ -53,7 +51,7 @@ dumping raw blocks of memory to a file without changing program code, loading bi
         exec  Executes commands from a specified YAML file with Mustache templating.
     ```
 
- - [Batch commands](https://www.vsdebug.pro/pages/docs/exec.html)
+ - [**Batch commands**](https://www.vsdebug.pro/pages/docs/exec.html)
 
     {: .code-box}
     ```
@@ -70,35 +68,35 @@ dumping raw blocks of memory to a file without changing program code, loading bi
     - command1 {{var1}} {{var2}}
     - command2 {{var1}} {{var2}}
     ```
-- [Memory dump](https://www.vsdebug.pro/pages/docs/dumpmem.html)
+- [**Memory dump**](https://www.vsdebug.pro/pages/docs/dumpmem.html)
 
     {: .code-box}
     ```
     dumpmem [options] <filename> <address> <size>
     ```
 
-- [Memory write](https://www.vsdebug.pro/pages/docs/loadmem.html)
+- [**Memory write**](https://www.vsdebug.pro/pages/docs/loadmem.html)
 
     {: .code-box}
     ```
     loadmem <file> <address> <size>
     ```
 
-- [Memory copy](https://www.vsdebug.pro/pages/docs/memcpy.html)
+- [**Memory copy**](https://www.vsdebug.pro/pages/docs/memcpy.html)
 
     {: .code-box}
     ```
     memcpy <dst> <src> <size>
     ```
 
-- [Write memory with a pattern](https://www.vsdebug.pro/pages/docs/memset.html)
+- [**Write memory with a pattern**](https://www.vsdebug.pro/pages/docs/memset.html)
 
     {: .code-box}
     ```
     memset <dst> <val> <size>
     ```
 
-- Memory diff
+- **Memory diff**
 
     {: .code-box}
     ```
