@@ -7,6 +7,11 @@
   background-color: #222;
 }
 
+.badge-vs {
+  background-color: #576f85;
+  color:#fff;
+}
+
 .navbar-nav .nav-item .nav-link .nav-text {
   color: #fff;
   display: inline-block;
@@ -27,7 +32,7 @@
 }
 
 .code-box {
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -39,14 +44,14 @@
   font-family: 'Arial', sans-serif;
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  color: #222;
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .copy-button {
-  background-color:  #17a2b8;
+  background-color:  #576f85;
   border: none;
   color: white;
   padding: 5px 10px;
@@ -62,6 +67,7 @@
   margin: 0;
   padding: 15px;
 }
+
 .code-box code {
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
@@ -70,8 +76,8 @@
 
 code.highlighter-rouge,
 code.language-plaintext.highlighter-rouge {
-    background-color: #f0f0f0;
-    color: #17a2b8;
+    background-color: #576f85;
+    color: #fff;
     padding: 2px 4px;
     border-radius: 4px;
 }
@@ -83,6 +89,8 @@ html {
   body {
     /* Margin bottom by footer height */
     margin-bottom: 70px;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   }
   .footer {
     position: absolute;
