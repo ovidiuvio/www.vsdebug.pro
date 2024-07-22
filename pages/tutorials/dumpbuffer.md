@@ -15,6 +15,10 @@ This article shows how to dump a a block of memory to a file, while debugging th
 without writing a debugging function into the program and without recompiling it.
 
 <div class="code-box">
+>{: .code-header}
+>Sample code
+> <button onclick="copyCode(this)" class="copy-button">Copy</button>
+
 ```cpp
 int main()
 {
@@ -73,7 +77,7 @@ dumpmem buffer.bin buffer bufferSize
 ```
 </div>
 
-The `dumpmem` utility uses the Visual Studio C++ debugger interface to automatically evaluate
+The [dumpmem](/pages/docs/dumpmem.html) utility uses the Visual Studio C++ debugger interface to automatically evaluate
 the address of `buffer` and the size from `bufferSize` variable.
 
 

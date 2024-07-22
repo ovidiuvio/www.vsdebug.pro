@@ -22,7 +22,7 @@ dumping raw blocks of memory to a file without changing program code, loading bi
 
 ###### **Available for:**
 
-**`VS2010 - VS2022`, `C/C++`, `C#`, `x86/64`, `Arm64/Arm64EC`**
+`VS2010 - VS2022`, `C/C++`, `C#`, `x86/64`, `Arm64/Arm64EC`
 
 ###### **Features:**
 

@@ -11,7 +11,7 @@ description: Effortlessly save C# byte arrays to disk during debugging with VSDe
 
 ##### Save a c# array to disk
 
-This article shows how to dump a C# byte array to a file, while debugging the program and without writing any code to save the data.
+This article is using [dumpmem](/pages/docs/dumpmem.html) command to save a C# byte array to a file, while debugging the program and without writing any code to save the data.
 
 <div class="code-box">
 >{: .code-header}
@@ -40,10 +40,9 @@ dumpmem bytes.bin &bytes[0] 1024
 ```
 </div>
 
-The `dumpmem` utility uses the Visual Studio debugger interface to automatically evaluate
-the address of `&bytes[0]`
+The [dumpmem](/pages/docs/dumpmem.html) utility uses the Visual Studio debugger interface to evaluate the address of `&bytes[0]`
 
-The `hexdump` command (very similar to dumpmem) can be used to dump bytes in hex format in a text file
+The [hexdump](/pages/docs/hexdump.html) command (very similar to dumpmem) can be used to dump bytes in hex format in a text file
 
 <div class="code-box">
 ```
@@ -66,10 +65,13 @@ hexdump bytes.txt &bytes[0] 1024 256 256
 - C# objects are stored on the managed heap, which is managed by the .NET runtime.
 - The memory layout of an object includes its header, type information, and the values of its fields.
   Ex:
-  The bytes array in the example has the following view in the memory window:
-  <img src="/assets/img/sharpmem.png" width="70%"/> \
-  The first 16 bytes are the header, and the data starts at offset 16. \
+  The bytes array in the example has the following view in the memory window: 
+
+  <img src="/assets/img/sharpmem.png" width="70%"/> 
+
+  The first 16 bytes are the header. \
   `bytes (0x000002096F50D2D0)` \
+  Data starts at offset 16. \
   `&bytes[0] (0x000002096f50d2e0)`
 - Every object in C# has a header, which is not visible to the programmer.
 - For reference types (classes), the object's memory contains the header and instance fields, while the reference itself is a pointer to this memory.

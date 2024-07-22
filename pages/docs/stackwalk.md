@@ -12,8 +12,6 @@ description: Performs a structured dump of the callstack for the current thread 
 
 The `stackwalk` command in VSDebugPro performs a structured dump of the call stack for the current thread or all threads in the debugged process. It provides a detailed view of the program's execution state, which is crucial for understanding the flow of control and diagnosing issues.
 
-##### Syntax
-
 {: .code-box}
 >{: .code-header}
 >Syntax
@@ -64,9 +62,10 @@ stackwalk [-o <filename>] [depth] [all]
    stackwalk -o stacks.txt 5 all
    ```
 
-##### Example Output
+<div class="code-box">
+>{: .code-header}
+>Sample code
 
-{: .code-box}
 ```cpp
 #include <Windows.h>
 #include <string>
@@ -105,7 +104,7 @@ int main()
     return 0;
 }
 ```
-
+</div>
 
 
 <div class="code-box">

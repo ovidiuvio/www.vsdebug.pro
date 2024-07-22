@@ -17,6 +17,10 @@ without writing a debugging function into the program and without recompiling it
 For this purpose we will use the following simple c code:
 
 <div class="code-box">
+>{: .code-header}
+>Sample code
+> <button onclick="copyCode(this)" class="copy-button">Copy</button>
+
 ```cpp
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -75,7 +79,7 @@ dumpmem lenna.raw img w * h * c
 </div>
 7. Click on the file link in `VSD Console` to open the image in viewer.
 
-The `dumpmem` utility uses the Visual Studio C++ debugger interface to automatically evaluate
+The [dumpmem](/pages/docs/dumpmem.html) utility uses the Visual Studio C++ debugger interface to automatically evaluate
 the address of `img` and the size from `w * h * c` expression.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w9otfmAO46Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
