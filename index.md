@@ -6,7 +6,6 @@ keywords: VSDebugPro, Visual Studio, C++, C#, debugging tools, memory dump, data
 description: Debug like a pro with VSDebugPro, a powerful Visual Studio extension for C/C++ and C#. Dump memory, load data, execute batch commands, and streamline your debugging workflow. Download VSDebugPro for free and take control of your debugging sessions.
 ---
 
----
 <p class="text-monospace">
 VSDebugPro is a Visual Studio extension for Visual C/C++, C# that adds several usefull debugging utilities such as
 dumping raw blocks of memory to a file without changing program code, loading binary data from a file to a specific memory location, allocating new memory in the debugged process, and more.
@@ -19,12 +18,13 @@ dumping raw blocks of memory to a file without changing program code, loading bi
 <br />
 <br />
 
+---
+
 ###### **Available for:**
 
 **`VS2010 - VS2022`, `C/C++`, `C#`, `x86/64`, `Arm64/Arm64EC`**
 
 ###### **Features:**
----
 
 - Save memory blocks from `Minidumps`
 - Supports `remote debugging` sessions
@@ -96,7 +96,7 @@ dumping raw blocks of memory to a file without changing program code, loading bi
     memset <dst> <val> <size>
     ```
 
-- **Memory diff**
+- [**Memory diff**]()
 
     {: .code-box}
     ```

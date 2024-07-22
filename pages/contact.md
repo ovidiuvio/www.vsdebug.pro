@@ -4,7 +4,6 @@ overview: true
 title: Contact | VSDebugPro - Enhanced debugging for Visual Studio
 ---
 
----
 Email: <contact@vsdebug.pro>
 {: align="center" :class="text-monospace" }
 
