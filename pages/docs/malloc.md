@@ -7,8 +7,9 @@ description: Dynamically allocate memory within your debugged process using VSDe
 {::options parse_block_html="true" /}
 
 ##### malloc (Memory Allocation Utility)
-
-##### Syntax
+---
+##### Description
+The `malloc` command (also known as `MemAlloc` in VSDebugPro) allows you to allocate memory in the debugged process's heap. This feature is useful for dynamically creating memory blocks during debugging sessions, which can be used for testing, data injection, or simulating memory allocation scenarios.
 
 {: .code-box}
 >{: .code-header}
@@ -16,9 +17,6 @@ description: Dynamically allocate memory within your debugged process using VSDe
 ```
 malloc <size>
 ```
-
-##### Description
-The `malloc` command (also known as `MemAlloc` in VSDebugPro) allows you to allocate memory in the debugged process's heap. This feature is useful for dynamically creating memory blocks during debugging sessions, which can be used for testing, data injection, or simulating memory allocation scenarios.
 
 ##### Parameters
 
@@ -30,7 +28,7 @@ The `malloc` command (also known as `MemAlloc` in VSDebugPro) allows you to allo
 2. The size can be specified as a decimal number or a hexadecimal number (prefixed with 0x).
 3. The command returns the address of the newly allocated memory block.
 4. The allocated memory is not initialized and may contain arbitrary data.
-5. Remember to free the allocated memory using the `free` command when it's no longer needed to prevent memory leaks.
+5. Remember to free the allocated memory using the [free](/pages/docs/free.html) command when it's no longer needed to prevent memory leaks.
 6. The allocation is performed in the debugged process's heap, not in the debugger's memory space.
 
 ##### Examples
@@ -67,14 +65,18 @@ The `malloc` command (also known as `MemAlloc` in VSDebugPro) allows you to allo
 
 ##### Related Commands
 
-- `free`: Releases memory previously allocated with `malloc`.
-- `memset`: Fills a memory region with a specified value.
-- `memcpy`: Copies data between memory locations.
-- `dumpmem`: Dumps memory contents to a file.
+- [free](/pages/docs/free.html): Releases memory previously allocated with `malloc`.
+- [memset](/pages/docs/memset.html): Fills a memory region with a specified value.
+- [memcpy](/pages/docs/memcpy.html): Copies data between memory locations.
+- [dumpmem](/pages/docs/dumpmem.html): Dumps memory contents to a file.
 
 ##### Example Code and Usage
 
-{: .code-box}
+<div class="code-box">
+>{: .code-header}
+>Sample code
+> <button onclick="copyCode(this)" class="copy-button">Copy</button>
+
 ```cpp
 #include <cstdlib>
 #include <cstring>
@@ -105,6 +107,7 @@ int main()
     return 0;
 }
 ```
+</div>
 
 During debugging, after the `buffer` variable is declared but before the `printf` statement, you can use the `malloc` command to allocate memory:
 
@@ -130,4 +133,4 @@ Buffer content: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 This example demonstrates how `malloc` can be used during a debugging session to dynamically allocate memory, which can be particularly useful for testing memory allocation scenarios, injecting data structures, or simulating out-of-memory conditions.
 
-Remember to use the `free` command in the debugger to release the allocated memory if you stop debugging before the `free(buffer)` line is executed, to prevent memory leaks in the debugged process.
+Remember to use the [free](/pages/docs/free.html) command in the debugger to release the allocated memory if you stop debugging before the `free(buffer)` line is executed, to prevent memory leaks in the debugged process.
