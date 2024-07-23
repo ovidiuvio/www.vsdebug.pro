@@ -7,7 +7,7 @@ description: Performs a structured dump of the callstack for the current thread 
 {::options parse_block_html="true" /}
 
 ##### stackwalk (Stack walk utility)
-
+---
 ##### Description
 
 The `stackwalk` command in VSDebugPro performs a structured dump of the call stack for the current thread or all threads in the debugged process. It provides a detailed view of the program's execution state, which is crucial for understanding the flow of control and diagnosing issues.
