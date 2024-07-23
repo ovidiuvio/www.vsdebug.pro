@@ -38,7 +38,7 @@ alias <add/del/list> <name> <string>
    ```
    alias add dm dumpmem
    ```
-   Creates an alias `dm` for the `dumpmem` command.
+   Creates an alias `dm` for the [dumpmem](/pages/docs/dumpmem.html) command.
 
 2. Adding a complex alias:
 
@@ -57,6 +57,8 @@ alias <add/del/list> <name> <string>
    Deletes the alias `dm`.
 
 4. Listing all aliases:
+
+   {: .code-box}
    ```
    alias list
    ```
