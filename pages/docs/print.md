@@ -91,6 +91,68 @@ The output format depends on the type of the evaluated expression:
 - For complex types (structs, classes), it prints a structured view of the object's contents.
 - For arrays, it prints the elements (up to a certain limit).
 
+##### Video tutorial
+
+The following clip highlights a very simple usecase for the print command.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pi65gkGqQjk?si=ZE7_lkAmE1xfh9ed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Code and output for the video example
+
+<div class="code-box">
+>{: .code-header}
+>Sample code
+
+```cpp
+#include <vector>
+#include <array>
+
+struct Point3D { 
+    std::array<int, 3> coords; 
+};
+
+struct Triangle { 
+    std::array<Point3D, 3> points; 
+};
+
+int main() {
+    
+    Point3D p0{ 1, 0, 0 };
+    Point3D p1{ 0, 1, 0 };
+    Point3D p2{ 0, 0, 1 };
+    
+    Triangle t{ p0, p1, p2 };
+
+    return 0;
+}
+```
+</div>
+
+<div class="code-box">
+>{: .code-header}
+>Print output
+
+```
+t = {points={ size=3 } }
+  points = { size=3 }
+    [0] = {coords={ size=3 } }
+      coords = { size=3 }
+        [0] = 1
+        [1] = 0
+        [2] = 0
+    [1] = {coords={ size=3 } }
+      coords = { size=3 }
+        [0] = 0
+        [1] = 1
+        [2] = 0
+    [2] = {coords={ size=3 } }
+      coords = { size=3 }
+        [0] = 0
+        [1] = 0
+        [2] = 1
+```
+</div>
+
 ##### Best Practices
 
 1. Use `print` for quick inspection of variables and expressions.
