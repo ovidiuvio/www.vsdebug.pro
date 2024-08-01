@@ -100,63 +100,6 @@
   </ul>
 </nav>
 
-<style>
-    .toc {
-        padding: 0rem;
-        border-radius: 0.25rem;
-    }
-    
-    .toc-title {
-        margin-bottom: 1rem;
-    }
-    
-    .toc .nav-item {
-        width: 100%;
-    }
-    
-    .toc .nav-link {
-        padding: 0.5rem 0;
-        color: #495057;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .toc .nav-item.current > .nav-link {
-        font-weight: bold;
-        color: #17a2b8;
-    }
-
-    .toc .sub-nav {
-        padding-left: 1rem;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-        max-height: 0;
-    }
-
-    .toc .sub-nav .nav-link {
-        padding: 0.25rem 0;
-        font-size: 0.9em;
-    }
-
-    .toc .collapsible {
-        cursor: pointer;
-    }
-
-    .toc .toggle-icon {
-        font-size: 0.8em;
-        transition: transform 0.3s ease;
-    }
-
-    .toc .collapsible[aria-expanded="true"] .toggle-icon {
-        transform: rotate(180deg);
-    }
-
-    .toc .sub-nav.show {
-        max-height: 500px; /* Adjust this value as needed */
-    }
-</style>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var collapsibles = document.querySelectorAll('.toc .collapsible');
