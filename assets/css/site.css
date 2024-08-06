@@ -55,7 +55,6 @@
 }
 
 .toc .toggle-icon {
-  font-size: 0.8em;
   transition: transform 0.3s ease;
 }
 
@@ -151,6 +150,46 @@ a {
 
 .jumbotron-vs {
   background-color: #dde0e4;
+}
+
+.docs-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.sidebar {
+  padding-top: 20px;
+  position: sticky;
+  top: 20px;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.content {
+  padding: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .docs-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 350,
+  'GRAD' 0,
+  'opsz' 20
 }
 
 html {
