@@ -12,9 +12,9 @@ description: Learn how to use VSDebugPro with our comprehensive documentation. D
 
 This document covers common concepts, features, and conventions used throughout VSDebugPro. Familiarizing yourself with these elements will help you navigate and use the tool more effectively.
 
-##### Console Interface
+##### Debug Console
 
-VSDebugPro provides a console interface for executing commands and viewing output.
+VSDebugPro provides a [console](/pages/features/console.html) for executing commands and viewing output.
 
 ##### Console Basics
 - Commands are entered at the prompt (typically `>`)
@@ -40,7 +40,7 @@ VSDebugPro provides a console interface for executing commands and viewing outpu
 ##### File Paths
 
 - Absolute paths are recommended (e.g., C:\temp\mydump.bin)
-- Relative paths use the `Working Directory` specified in Settings
+- Relative paths use the [Working Directory](/pages/features/workspace.html) <img src="/assets/img/wd.png" width="3%"/>  specified in [Settings](/pages/features/console.html#settings) <img src="/assets/img/settings.png" width="3%"/>
 
 ##### Debugging Context
 
@@ -70,9 +70,9 @@ When errors occur:
 
 VSDebugPro offers several ways to customize your experience:
 
-- Settings UI: Configure global settings and file associations
-- Aliases: Create custom shortcuts for frequently used commands
-- Scripts: Use the `exec` command to run sequences of commands from YAML files
+- [Settings UI](/pages/features/console.html#settings) <img src="/assets/img/settings.png" width="3%"/>: Configure global settings and file associations
+- [Aliases](/pages/docs/alias.html): Create custom shortcuts for frequently used commands
+- [Scripts](/pages/docs/exec.html): Use the [exec](/pages/docs/exec.html) command to run sequences of commands from YAML files
 
 ##### Performance Considerations
 

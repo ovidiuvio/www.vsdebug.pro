@@ -9,7 +9,7 @@
       </li>
       <div class="nav-link collapsible" aria-expanded="false">
         <span class="nav-text">Commands</span>
-        <span class="toggle-icon">▼</span>
+        <span class="toggle-icon material-symbols-outlined">keyboard_arrow_down</span>
       </div>
       <ul class="nav flex-column sub-nav">
         <li class="nav-item {% if page.url == '/pages/docs/alias.html' %}current{% endif %}">
@@ -77,7 +77,7 @@
     <li class="nav-item">
       <div class="nav-link collapsible" aria-expanded="false">
         <span class="nav-text">Tutorials</span>
-        <span class="toggle-icon">▼</span>
+        <span class="toggle-icon material-symbols-outlined">keyboard_arrow_down</span>
       </div>
       <ul class="nav flex-column sub-nav">
         <li class="nav-item {% if page.url == '/pages/tutorials/dumpbuffer.html' %}current{% endif %}">
@@ -99,35 +99,3 @@
     </li>
   </ul>
 </nav>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var collapsibles = document.querySelectorAll('.toc .collapsible');
-    
-    collapsibles.forEach(function(collapsible) {
-        collapsible.addEventListener('click', function(event) {
-            event.stopPropagation();
-            var subNav = this.nextElementSibling;
-            var isExpanded = this.getAttribute('aria-expanded') === 'true';
-            
-            this.setAttribute('aria-expanded', !isExpanded);
-            subNav.classList.toggle('show');
-        });
-        
-        // Expand the section if it contains the current page
-        var subNav = collapsible.nextElementSibling;
-        if (subNav.querySelector('.current')) {
-            collapsible.setAttribute('aria-expanded', 'true');
-            subNav.classList.add('show');
-        }
-    });
-
-    // Prevent collapsing when clicking on subsection links
-    var subNavLinks = document.querySelectorAll('.toc .sub-nav .nav-link');
-    subNavLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
-    });
-});
-</script>

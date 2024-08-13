@@ -1,0 +1,164 @@
+<nav class="toc" id="features-toc">
+  <h4 class="toc-title">Features</h4>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <li class="nav-item" data-url="/pages/features/workspace.html" data-fragment="console">
+        <a class="nav-link" href="/pages/features/workspace.html#console">
+          <span class="nav-text">Workspace</span>
+        </a>
+      </li>
+      <div class="nav-link collapsible" aria-expanded="false">
+        <span class="nav-text">Debug Console</span>
+        <span class="toggle-icon material-symbols-outlined">keyboard_arrow_down</span>
+      </div>
+      <ul class="nav flex-column sub-nav">
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="console">
+          <a class="nav-link" href="/pages/features/console.html#console">
+            <span class="nav-text">Console</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="command-aliases">
+          <a class="nav-link" href="/pages/features/console.html#command-aliases">
+            <span class="nav-text">Command Aliases</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="command-history">
+          <a class="nav-link" href="/pages/features/console.html#command-history">
+            <span class="nav-text">Command History</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="console-toolbar">
+          <a class="nav-link" href="/pages/features/console.html#console-toolbar">
+            <span class="nav-text">Console Toolbar</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="clear-console-content">
+          <a class="nav-link" href="/pages/features/console.html#clear-console-content">
+            <span class="nav-text">Clear Content</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="export-command-history">
+          <a class="nav-link" href="/pages/features/console.html#export-command-history">
+            <span class="nav-text">Export History</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="file-handlers">
+          <a class="nav-link" href="/pages/features/console.html#file-handling">
+            <span class="nav-text">File Handling</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="access-settings">
+          <a class="nav-link" href="/pages/features/console.html#settings">
+            <span class="nav-text">Settings</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="open-working-directory">
+          <a class="nav-link" href="/pages/features/console.html#open-working-directory">
+            <span class="nav-text">Open Workspace</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="repeat-last-command">
+          <a class="nav-link" href="/pages/features/console.html#repeat-last-command">
+            <span class="nav-text">Repeat Command</span>
+          </a>
+        </li>
+      </ul>
+      <li class="nav-item" data-url="/pages/features/tools.html" data-fragment="tools">
+        <a class="nav-link" href="/pages/features/tools.html#tools">
+          <span class="nav-text">External Tools</span>
+        </a>
+      </li>
+      <div class="nav-link collapsible" aria-expanded="false">
+        <span class="nav-text">Memory</span>
+        <span class="toggle-icon material-symbols-outlined">keyboard_arrow_down</span>
+      </div>
+      <ul class="nav flex-column sub-nav">
+        <li class="nav-item" data-url="/pages/features/memory.html" data-fragment="memory-dump">
+          <a class="nav-link" href="/pages/features/memory.html#memory-dump">
+            <span class="nav-text">Dump Memory</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/memory.html" data-fragment="hex-dump">
+          <a class="nav-link" href="/pages/features/memory.html#hex-dump">
+            <span class="nav-text">Hex Dump</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/memory.html" data-fragment="memory-copy">
+          <a class="nav-link" href="/pages/features/memory.html#memory-copy">
+            <span class="nav-text">Memory Copy</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/memory.html" data-fragment="memory-set">
+          <a class="nav-link" href="/pages/features/memory.html#memory-set">
+            <span class="nav-text">Memory Fill</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/memory.html" data-fragment="memory-allocation">
+          <a class="nav-link" href="/pages/features/memory.html#memory-allocation">
+            <span class="nav-text">Memory Allocation</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/memory.html" data-fragment="memory-deallocation">
+          <a class="nav-link" href="/pages/features/memory.html#memory-deallocation">
+            <span class="nav-text">Memory Dellocation</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/memory.html" data-fragment="memory-load">
+          <a class="nav-link" href="/pages/features/memory.html#memory-load">
+            <span class="nav-text">Memory Load</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const nav = document.getElementById('features-toc');
+
+      // Function to update navigation highlighting
+      function updateNavHighlight() {
+          const currentUrl = window.location.pathname;
+          const currentFragment = window.location.hash.slice(1);
+          
+          const navItems = nav.querySelectorAll('.nav-item');
+          navItems.forEach(item => {
+              const itemUrl = item.getAttribute('data-url');
+              const itemFragment = item.getAttribute('data-fragment');
+              
+              item.classList.remove('current');
+              
+              if (itemUrl === currentUrl && (!itemFragment || itemFragment === currentFragment)) {
+                  item.classList.add('current');
+                  // Expand parent collapsible if it exists
+                  let parent = item.closest('.sub-nav');
+                  if (parent) {
+                      parent.classList.add('show');
+                      parent.previousElementSibling.setAttribute('aria-expanded', 'true');
+                  }
+              }
+          });
+      }
+
+      // Handle collapsible sections
+      nav.addEventListener('click', function(e) {
+          if (e.target.classList.contains('collapsible') || e.target.closest('.collapsible')) {
+              const collapsible = e.target.classList.contains('collapsible') ? e.target : e.target.closest('.collapsible');
+              const subNav = collapsible.nextElementSibling;
+              subNav.classList.toggle('show');
+              const isExpanded = subNav.classList.contains('show');
+              collapsible.setAttribute('aria-expanded', isExpanded);
+              collapsible.querySelector('.toggle-icon').textContent = isExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+          }
+      });
+
+      // Run on initial page load
+      updateNavHighlight();
+
+      // Run on hash change (for single-page navigation)
+      window.addEventListener('hashchange', updateNavHighlight);
+
+      // If you're using HTML5 History API for navigation, also listen for 'popstate' events
+      window.addEventListener('popstate', updateNavHighlight);
+  });
+</script>
