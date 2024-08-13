@@ -2,14 +2,64 @@
   <h4 class="toc-title">Features</h4>
   <ul class="nav flex-column">
     <li class="nav-item">
+      <li class="nav-item" data-url="/pages/features/workspace.html" data-fragment="console">
+        <a class="nav-link" href="/pages/features/workspace.html#console">
+          <span class="nav-text">Workspace</span>
+        </a>
+      </li>
       <div class="nav-link collapsible" aria-expanded="false">
         <span class="nav-text">Debug Console</span>
         <span class="toggle-icon material-symbols-outlined">keyboard_arrow_down</span>
       </div>
       <ul class="nav flex-column sub-nav">
-        <li class="nav-item {% if page.url == '/pages/features/console.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/features/console.html">
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="console">
+          <a class="nav-link" href="/pages/features/console.html#console">
             <span class="nav-text">Console</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="command-aliases">
+          <a class="nav-link" href="/pages/features/console.html#command-aliases">
+            <span class="nav-text">Command Aliases</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="command-history">
+          <a class="nav-link" href="/pages/features/console.html#command-history">
+            <span class="nav-text">Command History</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="console-toolbar">
+          <a class="nav-link" href="/pages/features/console.html#console-toolbar">
+            <span class="nav-text">Console Toolbar</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="clear-console-content">
+          <a class="nav-link" href="/pages/features/console.html#clear-console-content">
+            <span class="nav-text">Clear Content</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="export-command-history">
+          <a class="nav-link" href="/pages/features/console.html#export-command-history">
+            <span class="nav-text">Export History</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="file-handlers">
+          <a class="nav-link" href="/pages/features/console.html#file-handlers">
+            <span class="nav-text">File Handling</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="access-settings">
+          <a class="nav-link" href="/pages/features/console.html#settings">
+            <span class="nav-text">Settings</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="open-working-directory">
+          <a class="nav-link" href="/pages/features/console.html#open-working-directory">
+            <span class="nav-text">Open Workspace</span>
+          </a>
+        </li>
+        <li class="nav-item" data-url="/pages/features/console.html" data-fragment="repeat-last-command">
+          <a class="nav-link" href="/pages/features/console.html#repeat-last-command">
+            <span class="nav-text">Repeat Command</span>
           </a>
         </li>
       </ul>
@@ -17,73 +67,108 @@
         <span class="nav-text">External Tools</span>
         <span class="toggle-icon material-symbols-outlined">keyboard_arrow_down</span>
       </div>
+      <ul class="nav flex-column sub-nav">
+        <li class="nav-item {% if page.url == '/pages/features/tools.html#working-directory' %}current{% endif %}">
+          <a class="nav-link" href="/pages/features/tools.html#working-directory">
+            <span class="nav-text">Working Directory</span>
+          </a>
+        </li>
+        <li class="nav-item {% if page.url == '/pages/features/tools.html#text-editor' %}current{% endif %}">
+          <a class="nav-link" href="/pages/features/tools.html#text-editor">
+            <span class="nav-text">Text Editor</span>
+          </a>
+        </li>
+        <li class="nav-item {% if page.url == '/pages/features/tools.html#hex-editor' %}current{% endif %}">
+          <a class="nav-link" href="/pages/features/tools.html#hex-editor">
+            <span class="nav-text">Hex Editor</span>
+          </a>
+        </li>
+        <li class="nav-item {% if page.url == '/pages/features/tools.html#image-viewer' %}current{% endif %}">
+          <a class="nav-link" href="/pages/features/tools.html#image-viewer">
+            <span class="nav-text">Image Viewer</span>
+          </a>
+        </li>
+      </ul>
       <div class="nav-link collapsible" aria-expanded="false">
         <span class="nav-text">Memory</span>
         <span class="toggle-icon material-symbols-outlined">keyboard_arrow_down</span>
       </div>
       <ul class="nav flex-column sub-nav">
-        <li class="nav-item {% if page.url == '/pages/docs/alias.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/alias.html">
-            <span class="nav-text">alias</span>
+        <li class="nav-item {% if page.url == '/pages/features/memory.html#dump-memory' %}current{% endif %}">
+          <a class="nav-link" href="/pages/features/memory.html#dump-memory">
+            <span class="nav-text">Dump Memory</span>
           </a>
         </li>
-        <li class="nav-item {% if page.url == '/pages/docs/stackwalk.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/stackwalk.html">
-            <span class="nav-text">stackwalk</span>
+        <li class="nav-item {% if page.url == '/pages/features/memory.html#write-memory' %}current{% endif %}">
+          <a class="nav-link" href="/pages/features/memory.html#write-memory">
+            <span class="nav-text">Write Memory</span>
           </a>
         </li>
-        <li class="nav-item {% if page.url == '/pages/docs/dumpmem.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/dumpmem.html">
-            <span class="nav-text">dumpmem</span>
+        <li class="nav-item {% if page.url == '/pages/features/memory.html#copy-memory' %}current{% endif %}">
+          <a class="nav-link" href="/pages/features/memory.html#copy-memory">
+            <span class="nav-text">Copy Memory</span>
           </a>
         </li>
-        <li class="nav-item {% if page.url == '/pages/docs/loadmem.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/loadmem.html">
-            <span class="nav-text">loadmem</span>
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/pages/docs/hexdump.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/hexdump.html">
-            <span class="nav-text">hexdump</span>
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/pages/docs/memset.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/memset.html">
-            <span class="nav-text">memset</span>
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/pages/docs/memcpy.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/memcpy.html">
-            <span class="nav-text">memcpy</span>
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/pages/docs/malloc.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/malloc.html">
-            <span class="nav-text">malloc</span>
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/pages/docs/free.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/free.html">
-            <span class="nav-text">free</span>
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/pages/docs/print.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/print.html">
-            <span class="nav-text">print</span>
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/pages/docs/export.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/export.html">
-            <span class="nav-text">export</span>
-          </a>
-        </li>
-        <li class="nav-item {% if page.url == '/pages/docs/exec.html' %}current{% endif %}">
-          <a class="nav-link" href="/pages/docs/exec.html">
-            <span class="nav-text">exec</span>
+        <li class="nav-item {% if page.url == '/pages/features/memory.html#fill-memory' %}current{% endif %}">
+          <a class="nav-link" href="/pages/features/memory.html#fill-memory">
+            <span class="nav-text">Fill Memory</span>
           </a>
         </li>
       </ul>
+      <div class="nav-link collapsible" aria-expanded="false">
+        <span class="nav-text">Scripting</span>
+        <span class="toggle-icon material-symbols-outlined">keyboard_arrow_down</span>
+      </div>
     </li>
   </ul>
 </nav>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const nav = document.getElementById('features-toc');
+
+      // Function to update navigation highlighting
+      function updateNavHighlight() {
+          const currentUrl = window.location.pathname;
+          const currentFragment = window.location.hash.slice(1);
+          
+          const navItems = nav.querySelectorAll('.nav-item');
+          navItems.forEach(item => {
+              const itemUrl = item.getAttribute('data-url');
+              const itemFragment = item.getAttribute('data-fragment');
+              
+              item.classList.remove('current');
+              
+              if (itemUrl === currentUrl && (!itemFragment || itemFragment === currentFragment)) {
+                  item.classList.add('current');
+                  // Expand parent collapsible if it exists
+                  let parent = item.closest('.sub-nav');
+                  if (parent) {
+                      parent.classList.add('show');
+                      parent.previousElementSibling.setAttribute('aria-expanded', 'true');
+                  }
+              }
+          });
+      }
+
+      // Handle collapsible sections
+      nav.addEventListener('click', function(e) {
+          if (e.target.classList.contains('collapsible') || e.target.closest('.collapsible')) {
+              const collapsible = e.target.classList.contains('collapsible') ? e.target : e.target.closest('.collapsible');
+              const subNav = collapsible.nextElementSibling;
+              subNav.classList.toggle('show');
+              const isExpanded = subNav.classList.contains('show');
+              collapsible.setAttribute('aria-expanded', isExpanded);
+              collapsible.querySelector('.toggle-icon').textContent = isExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down';
+          }
+      });
+
+      // Run on initial page load
+      updateNavHighlight();
+
+      // Run on hash change (for single-page navigation)
+      window.addEventListener('hashchange', updateNavHighlight);
+
+      // If you're using HTML5 History API for navigation, also listen for 'popstate' events
+      window.addEventListener('popstate', updateNavHighlight);
+  });
 </script>
