@@ -193,13 +193,14 @@ a {
   'opsz' 20
 }
 
+
 html {
     position: relative;
     min-height: 100%;
   }
   body {
     /* Margin bottom by footer height */
-    margin-bottom: 70px;
+    margin-bottom: 160px;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     background-color: #eaecef;
