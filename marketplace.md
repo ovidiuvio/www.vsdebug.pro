@@ -15,11 +15,11 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
 ---
 - Commands console
 
-  <img src="https://www.vsdebug.pro/assets/img/ft_console.webp" width="100%"/>
+  <img src="https://www.vsdebug.pro/assets/img/ft_console.webp" width="60%"/>
 
 - Workspace and External tools integration
 
-  <img src="https://www.vsdebug.pro/assets/img/ft_settings.webp" width="60%"/>
+  <img src="https://www.vsdebug.pro/assets/img/ft_settings.webp" width="40%"/>
 
 - Save memory blocks from `Minidumps`
 - Supports `remote debugging` sessions
@@ -49,9 +49,11 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
         exec	Executes commands from an YAML file with Mustache templating.
     ```
 
- - [Print & export symbols](https://www.vsdebug.pro/pages/docs/print.html)
+ - [Print symbols](https://www.vsdebug.pro/pages/docs/print.html)
 
     <img src="https://www.vsdebug.pro/assets/img/ft_repeat.webp" width="35%"/>
+
+ - [Export symbols](https://www.vsdebug.pro/pages/docs/export.html)
 
     <video src="https://www.vsdebug.pro/assets/webm/VSDebugPro-export-object.webm" width="640" height="480" controls></video>
 
