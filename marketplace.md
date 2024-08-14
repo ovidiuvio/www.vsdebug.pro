@@ -13,6 +13,13 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
 **Features:**
 
 ---
+- Commands console
+
+  <img src="https://www.vsdebug.pro/assets/img/ft_console.webp" width="100%"/>
+
+- Workspace and External tools integration
+
+  <img src="https://www.vsdebug.pro/assets/img/ft_settings.webp" width="60%"/>
 
 - Save memory blocks from `Minidumps`
 - Supports `remote debugging` sessions
@@ -24,19 +31,29 @@ For older versions: VS2010, VS2012, VS2013, VS2015, VS2017, please visit  **[ww
 - Console commands:
 
     ```
-        help  Provides help information for commands.
-       about  Opens the about window.
-       alias  Alias allows a more familiar command or name to execute a long string
-    settings  Opens product settings dialog.
-     dumpmem  Memory dump utility.
-     loadmem  Load memory utility.
-      memcpy  Memory copy utility.
-      memset  Fills a block of memory with a pattern.
-        diff  Memory diff.
-      malloc  Allocates memory in the process heap.
-        free  Free memory allocated with malloc.
-        exec  Executes commands from a specified YAML file with Mustache templating.
+        help	Provides help information for commands.
+       about	Opens the about window.
+       alias	Alias allows creating command shortcuts.
+    settings	Opens product settings dialog.
+   stackwalk	Performs a structured dump of the call stack.
+     dumpmem	Memory dump utility.
+     loadmem	Load memory utility.
+     hexdump	Memory hex dump utility.
+      memcpy	Memory copy utility.
+      memset	Fills a block of memory with a pattern.
+        diff	Diff utility.
+      malloc	Allocates memory in the process heap.
+        free	Free memory allocated with malloc.
+       print	Evaluates and prints the value of a symbol or expression.
+      export	Fully expands a symbol or expression to a file.
+        exec	Executes commands from an YAML file with Mustache templating.
     ```
+
+ - [Print & export symbols](https://www.vsdebug.pro/pages/docs/print.html)
+
+    <img src="https://www.vsdebug.pro/assets/img/ft_repeat.webp" width="35%"/>
+
+    <video src="https://www.vsdebug.pro/assets/webm/VSDebugPro-export-object.webm" width="640" height="480" controls></video>
 
  - [Batch commands](https://www.vsdebug.pro/pages/docs/exec.html)
 
