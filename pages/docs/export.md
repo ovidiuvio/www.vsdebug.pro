@@ -25,6 +25,7 @@ export [options] <filename> <expression>
 - `[options]`: Optional flags to modify the command behavior.
   - `-f`: Force overwrite if the output file already exists.
   - `-a`: Append to the file if it already exists.
+  - `-j`: Serialize to json format.
 - `<filename>`: The name of the file where the expanded expression will be saved.
 - `<expression>`: The symbol or expression to evaluate and export.
 

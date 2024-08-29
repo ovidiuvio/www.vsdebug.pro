@@ -20,6 +20,9 @@ print <expression>
 ```
 
 ##### Parameters
+- `[options]`: Optional flags to modify the command behavior.
+  - `-j`: Serialize to json format.
+- `<expression>`: The symbol or expression to evaluate and export.
 
 - `<expression>`: The symbol, variable, or expression to evaluate and print.
 
